@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Jelly</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="calculator">
+    <!-- Título de la calculadora -->
+    <h1 class="calculator-title">Calculadora</h1>
+
+    <!-- Pantalla de la calculadora -->
+    <input type="text" id="display" class="display" disabled>
+    
+    <!-- Botones de la calculadora -->
+    <div class="buttons">
+      <button class="btn" onclick="clearDisplay()">R</button>
+      <button class="btn" onclick="clearEntry()">DEL</button>
+      <button class="btn" onclick="appendNumber('%')">%</button>
+      <button class="btn" onclick="setOperation('/')">/</button>
+
+      <button class="btn" onclick="appendNumber('7')">7</button>
+      <button class="btn" onclick="appendNumber('8')">8</button>
+      <button class="btn" onclick="appendNumber('9')">9</button>
+      <button class="btn" onclick="setOperation('x')">x</button>
+
+      <button class="btn" onclick="appendNumber('4')">4</button>
+      <button class="btn" onclick="appendNumber('5')">5</button>
+      <button class="btn" onclick="appendNumber('6')">6</button>
+      <button class="btn" onclick="setOperation('-')">-</button>
+
+      <button class="btn" onclick="appendNumber('1')">1</button>
+      <button class="btn" onclick="appendNumber('2')">2</button>
+      <button class="btn" onclick="appendNumber('3')">3</button>
+      <button class="btn" onclick="setOperation('+')">+</button>
+
+      <button class="btn" onclick="appendNumber('0')">0</button>
+      <button class="btn" onclick="appendNumber('.')">.</button>
+      <button class="btn equal-btn" onclick="calculateResult()">=</button> <!-- Botón de igual -->
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
